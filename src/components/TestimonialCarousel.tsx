@@ -42,7 +42,7 @@ interface TestimonialCarouselProps {
   testimonials: Testimonial[];
 }
 
-const trustCompanies = ["Deloitte", "TCS", "Infosys", "Wipro", "Accenture", "Microsoft"];
+const trustCompanies = ["Deloitte", "TCS", "Infosys", "Wipro", "Accenture", "Cognizant", "PwC", "EY", "Capgemini"];
 
 const TestimonialCarousel = ({ testimonials }: TestimonialCarouselProps) => {
   const [current, setCurrent] = useState(0);
