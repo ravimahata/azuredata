@@ -4,6 +4,7 @@ import CompanyList from "@/components/CompanyList";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle, Zap, Brain, Trophy, Target, Clock } from "lucide-react";
 import posterImg from "@/assets/poster.png";
+import posterCoverImg from "@/assets/poster-cover.png";
 
 const topics = [
   { emoji: "🛠", label: "ADF (Azure Data Factory)" },
@@ -79,11 +80,16 @@ const Index = () => {
             </button>
           </div>
 
-          {/* Poster Image */}
-          <div className="px-6 pt-2">
+          {/* Poster Images */}
+          <div className="px-6 pt-2 space-y-3">
+            <img
+              src={posterCoverImg}
+              alt="Azure Data Engineering Interview Guide - Cover"
+              className="w-full rounded-xl object-cover"
+            />
             <img
               src={posterImg}
-              alt="Azure Data Engineering Interview Guide"
+              alt="Azure Data Engineering Interview Guide - Details"
               className="w-full rounded-xl object-cover"
             />
           </div>
