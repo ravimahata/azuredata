@@ -3,6 +3,7 @@ import TopicBadge from "@/components/TopicBadge";
 import CompanyList from "@/components/CompanyList";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle, Zap, Brain, Trophy, Target, Clock } from "lucide-react";
+import posterImg from "@/assets/poster.png";
 
 const topics = [
   { emoji: "🛠", label: "ADF (Azure Data Factory)" },
@@ -76,6 +77,15 @@ const Index = () => {
               <ArrowLeft className="w-4 h-4" />
               Back
             </button>
+          </div>
+
+          {/* Poster Image */}
+          <div className="px-6 pt-2">
+            <img
+              src={posterImg}
+              alt="Azure Data Engineering Interview Guide"
+              className="w-full rounded-xl object-cover"
+            />
           </div>
 
           {/* Hero section */}
