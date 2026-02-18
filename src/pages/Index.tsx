@@ -208,22 +208,22 @@ const Index = () => {
       </div>
 
       {/* Fixed Sticky Purchase Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center px-4 pb-4">
-        <div className="w-full max-w-2xl cta-gradient shadow-[0_-4px_20px_rgba(0,0,0,0.3)] border border-white/10 rounded-2xl px-4 py-3 flex items-center justify-between gap-4">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-3">
-            <span className="text-xs sm:text-sm font-semibold text-primary-foreground/90 uppercase tracking-wide animate-pulse">
+      <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center px-4 pb-3 sm:pb-4">
+        <div className="w-full max-w-2xl cta-gradient shadow-[0_-8px_30px_rgba(0,0,0,0.4)] border border-white/20 rounded-2xl px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3 sm:gap-4 backdrop-blur-sm">
+          <div className="flex flex-col gap-0.5">
+            <span className="text-[10px] sm:text-xs font-bold text-primary-foreground/80 uppercase tracking-widest animate-pulse">
               🔥 Limited Offer
             </span>
-            <div className="flex items-baseline gap-2">
-              <span className="text-2xl sm:text-3xl font-extrabold text-primary-foreground">₹560</span>
-              <span className="text-sm sm:text-lg text-primary-foreground/60 line-through">₹5,000</span>
-              <span className="text-xs font-bold bg-primary-foreground/20 text-primary-foreground rounded-full px-2 py-0.5 hidden sm:inline-block">
+            <div className="flex items-baseline gap-1.5 sm:gap-2">
+              <span className="text-2xl sm:text-3xl font-black text-primary-foreground tracking-tight">₹560</span>
+              <span className="text-xs sm:text-sm text-primary-foreground/50 line-through">₹5,000</span>
+              <span className="text-[10px] sm:text-xs font-extrabold bg-primary-foreground/20 text-primary-foreground rounded-full px-2 py-0.5">
                 89% OFF
               </span>
             </div>
           </div>
           <Button
-            className="bg-primary-foreground text-primary font-extrabold px-6 sm:px-10 py-3 sm:py-4 text-base sm:text-lg rounded-xl shadow-xl hover:scale-105 transition-transform whitespace-nowrap"
+            className="bg-primary-foreground text-primary font-black px-5 sm:px-10 py-3 sm:py-5 text-sm sm:text-lg rounded-xl shadow-[0_4px_20px_rgba(255,255,255,0.3)] hover:scale-105 hover:shadow-[0_6px_30px_rgba(255,255,255,0.4)] transition-all duration-200 whitespace-nowrap"
             size="lg"
             asChild
           >
