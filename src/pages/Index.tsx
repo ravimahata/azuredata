@@ -237,7 +237,7 @@ const Index = () => {
       </div>
 
       {/* Bottom spacer for sticky bar */}
-      <div className="h-24" />
+      <div className="h-32" />
     </div>
   );
 };
