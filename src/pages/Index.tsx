@@ -210,27 +210,39 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Pricing + Buy CTA */}
-            <div className="sticky bottom-0 bg-card border-t border-border -mx-6 px-6 py-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-extrabold text-price-current">₹560</span>
-                  <span className="text-lg text-price-original line-through">₹5,000</span>
-                </div>
-                <Button
-                  className="cta-gradient text-primary-foreground font-bold px-8 py-3 text-base rounded-xl shadow-lg hover:opacity-90 transition-opacity"
-                  size="lg"
-                  asChild
-                >
-                  <a href="https://topmate.io/rabi_sankar_mahata/1702331" target="_blank" rel="noopener noreferrer">
-                    🔥 Buy Now
-                  </a>
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+
+      {/* Fixed Sticky Purchase Bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 cta-gradient shadow-[0_-4px_20px_rgba(0,0,0,0.3)] border-t border-white/10">
+        <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-3">
+            <span className="text-xs sm:text-sm font-semibold text-primary-foreground/90 uppercase tracking-wide animate-pulse">
+              🔥 Limited Offer
+            </span>
+            <div className="flex items-baseline gap-2">
+              <span className="text-2xl sm:text-3xl font-extrabold text-primary-foreground">₹560</span>
+              <span className="text-sm sm:text-lg text-primary-foreground/60 line-through">₹5,000</span>
+              <span className="text-xs font-bold bg-primary-foreground/20 text-primary-foreground rounded-full px-2 py-0.5 hidden sm:inline-block">
+                89% OFF
+              </span>
+            </div>
+          </div>
+          <Button
+            className="bg-primary-foreground text-primary font-extrabold px-6 sm:px-10 py-3 sm:py-4 text-base sm:text-lg rounded-xl shadow-xl hover:scale-105 transition-transform whitespace-nowrap"
+            size="lg"
+            asChild
+          >
+            <a href="https://topmate.io/rabi_sankar_mahata/1702331" target="_blank" rel="noopener noreferrer">
+              🔥 Buy Now
+            </a>
+          </Button>
+        </div>
+      </div>
+
+      {/* Bottom spacer for sticky bar */}
+      <div className="h-20" />
     </div>
   );
 };
