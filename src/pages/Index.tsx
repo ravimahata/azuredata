@@ -208,8 +208,10 @@ const Index = () => {
       </div>
 
       {/* Fixed Sticky Purchase Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center px-4 pb-3 sm:pb-4">
-        <div className="w-full max-w-2xl cta-gradient shadow-[0_-8px_30px_rgba(0,0,0,0.4)] border border-white/20 rounded-2xl px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3 sm:gap-4 backdrop-blur-sm">
+      <div className="fixed bottom-0 left-0 right-0 z-[9999] flex justify-center px-4 pb-3 sm:pb-4">
+        {/* Solid backdrop to fully hide content behind */}
+        <div className="absolute inset-0 bg-background" />
+        <div className="relative w-full max-w-2xl cta-gradient shadow-[0_-8px_30px_rgba(0,0,0,0.4)] border border-white/20 rounded-2xl px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3 sm:gap-4">
           <div className="flex flex-col gap-0.5">
             <span className="text-[10px] sm:text-xs font-bold text-primary-foreground/80 uppercase tracking-widest animate-pulse">
               🔥 Limited Offer
