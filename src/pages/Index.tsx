@@ -214,8 +214,8 @@ const Index = () => {
             <div className="sticky bottom-0 bg-card border-t border-border -mx-6 px-6 py-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-extrabold text-price-current">₹1,599</span>
-                  <span className="text-lg text-price-original line-through">₹13,611</span>
+                  <span className="text-3xl font-extrabold text-price-current">₹560</span>
+                  <span className="text-lg text-price-original line-through">₹5,000</span>
                 </div>
                 <Button
                   className="cta-gradient text-primary-foreground font-bold px-8 py-3 text-base rounded-xl shadow-lg hover:opacity-90 transition-opacity"
