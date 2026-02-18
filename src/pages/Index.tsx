@@ -81,15 +81,10 @@ const Index = () => {
           </div>
 
           {/* Poster Images */}
-          <div className="px-6 pt-2 space-y-3">
+          <div className="px-6 pt-2">
             <img
               src={posterCoverImg}
               alt="Azure Data Engineering Interview Guide - Cover"
-              className="w-full rounded-xl object-cover"
-            />
-            <img
-              src={posterImg}
-              alt="Azure Data Engineering Interview Guide - Details"
               className="w-full rounded-xl object-cover"
             />
           </div>
@@ -124,6 +119,13 @@ const Index = () => {
               </p>
               <p className="text-xs text-muted-foreground mt-2">AI-generated based on testimonials</p>
             </div>
+
+            {/* Second Poster */}
+            <img
+              src={posterImg}
+              alt="Azure Data Engineering Interview Guide - Details"
+              className="w-full rounded-xl object-cover"
+            />
           </div>
 
           {/* Main Content */}
