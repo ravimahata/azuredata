@@ -65,7 +65,7 @@ const testimonials = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background flex items-start justify-center py-6 px-4">
+    <div className="min-h-screen bg-background flex items-start justify-center py-6 px-4 pb-28 sm:pb-32">
       <div className="w-full max-w-2xl">
         {/* Card Container */}
         <div className="bg-card rounded-2xl shadow-2xl overflow-hidden">
@@ -237,7 +237,7 @@ const Index = () => {
       </div>
 
       {/* Bottom spacer for sticky bar */}
-      <div className="h-32" />
+      <div className="h-0" />
     </div>
   );
 };
