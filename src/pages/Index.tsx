@@ -1,4 +1,4 @@
-import TestimonialCard from "@/components/TestimonialCard";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 import TopicBadge from "@/components/TopicBadge";
 import CompanyList from "@/components/CompanyList";
 import { Button } from "@/components/ui/button";
@@ -201,14 +201,7 @@ const Index = () => {
             </div>
 
             {/* Testimonials */}
-            <div>
-              <h2 className="text-lg font-bold text-card-foreground mb-4">💬 What People Are Saying</h2>
-              <div className="space-y-3">
-                {testimonials.map((t) => (
-                  <TestimonialCard key={t.name} quote={t.quote} name={t.name} date={t.date} />
-                ))}
-              </div>
-            </div>
+            <TestimonialCarousel testimonials={testimonials} />
 
           </div>
         </div>
