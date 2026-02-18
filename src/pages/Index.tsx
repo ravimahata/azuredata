@@ -208,8 +208,8 @@ const Index = () => {
       </div>
 
       {/* Fixed Sticky Purchase Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 cta-gradient shadow-[0_-4px_20px_rgba(0,0,0,0.3)] border-t border-white/10">
-        <div className="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+      <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center px-4 pb-4">
+        <div className="w-full max-w-2xl cta-gradient shadow-[0_-4px_20px_rgba(0,0,0,0.3)] border border-white/10 rounded-2xl px-4 py-3 flex items-center justify-between gap-4">
           <div className="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-3">
             <span className="text-xs sm:text-sm font-semibold text-primary-foreground/90 uppercase tracking-wide animate-pulse">
               🔥 Limited Offer
@@ -235,7 +235,7 @@ const Index = () => {
       </div>
 
       {/* Bottom spacer for sticky bar */}
-      <div className="h-20" />
+      <div className="h-24" />
     </div>
   );
 };
